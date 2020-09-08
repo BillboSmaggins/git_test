@@ -1,0 +1,97 @@
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/billbosmaggins/.Xauthority
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting LANG=en_US.UTF-8
+dbus-update-activation-environment: setting GDM_LANG=en_US
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting GTK_OVERLAY_SCROLLING=0
+dbus-update-activation-environment: setting XDG_GREETER_DATA_DIR=/var/lib/lightdm-data/billbosmaggins
+dbus-update-activation-environment: setting USER=billbosmaggins
+dbus-update-activation-environment: setting DESKTOP_SESSION=xubuntu
+dbus-update-activation-environment: setting QT_QPA_PLATFORMTHEME=gtk2
+dbus-update-activation-environment: setting PWD=/home/billbosmaggins
+dbus-update-activation-environment: setting HOME=/home/billbosmaggins
+dbus-update-activation-environment: setting QT_ACCESSIBILITY=1
+dbus-update-activation-environment: setting XDG_SESSION_TYPE=x11
+dbus-update-activation-environment: setting XDG_DATA_DIRS=/usr/share/xubuntu:/usr/share/xfce4:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+dbus-update-activation-environment: setting XDG_SESSION_DESKTOP=xubuntu
+dbus-update-activation-environment: setting CLUTTER_BACKEND=x11
+dbus-update-activation-environment: setting SHELL=/bin/bash
+dbus-update-activation-environment: setting XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+dbus-update-activation-environment: setting IM_CONFIG_PHASE=1
+dbus-update-activation-environment: setting GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+dbus-update-activation-environment: setting SHLVL=1
+dbus-update-activation-environment: setting LANGUAGE=en_US
+dbus-update-activation-environment: setting GDMSESSION=xubuntu
+dbus-update-activation-environment: setting LOGNAME=billbosmaggins
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting XDG_RUNTIME_DIR=/run/user/1000
+dbus-update-activation-environment: setting XAUTHORITY=/home/billbosmaggins/.Xauthority
+dbus-update-activation-environment: setting XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session0
+dbus-update-activation-environment: setting XDG_CONFIG_DIRS=/etc/xdg/xdg-xubuntu:/etc/xdg
+dbus-update-activation-environment: setting PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+dbus-update-activation-environment: setting _=/usr/bin/dbus-update-activation-environment
+
+(xfce4-session:1464): xfce4-session-WARNING **: 08:39:14.509: xfsm_manager_load_session: Something wrong with /home/billbosmaggins/.cache/sessions/xfce4-session-billbosmaggins-VirtualBox:0, Does it exist? Permissions issue?
+** Message: 08:39:14.529: couldn't access control socket: /run/user/1000/keyring/control: No such file or directory
+
+(polkit-gnome-authentication-agent-1:1577): GLib-CRITICAL **: 08:39:15.811: g_variant_new_string: assertion 'string != NULL' failed
+
+(polkit-gnome-authentication-agent-1:1577): polkit-gnome-1-WARNING **: 08:39:15.811: Failed to register client: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.gnome.SessionManager was not provided by any .service files
+
+(wrapper-2.0:1625): GLib-GIO-CRITICAL **: 08:39:17.168: g_file_new_for_path: assertion 'path != NULL' failed
+
+(wrapper-2.0:1625): GLib-GIO-CRITICAL **: 08:39:17.168: g_file_monitor_file: assertion 'G_IS_FILE (file)' failed
+
+(wrapper-2.0:1625): GLib-GObject-WARNING **: 08:39:17.168: invalid (NULL) pointer instance
+
+(wrapper-2.0:1625): GLib-GObject-CRITICAL **: 08:39:17.168: g_signal_connect_data: assertion 'G_TYPE_CHECK_INSTANCE (instance)' failed
+
+(wrapper-2.0:1625): Gtk-WARNING **: 08:39:17.168: Attempting to add a widget with type GtkToggleButton to a container of type XfcePanelPlugin, but the widget is already inside a container of type XfcePanelPlugin, please remove the widget from its existing container first.
+
+** (wrapper-2.0:1635): WARNING **: 08:39:17.175: No outputs have backlight property
+
+(wrapper-2.0:1625): Gtk-WARNING **: 08:39:17.260: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(wrapper-2.0:1636): Gtk-WARNING **: 08:39:17.315: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PulseaudioButton)
+
+(wrapper-2.0:1635): Gtk-WARNING **: 08:39:17.416: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner PowerManagerButton)
+
+(nm-applet:1522): Gtk-WARNING **: 08:39:17.453: Can't set a parent on widget which has a parent
+
+(wrapper-2.0:1617): Gtk-WARNING **: 08:39:17.658: Negative content width -3 (allocation 1, extents 2x2) while allocating gadget (node button, owner GtkToggleButton)
+
+(xfwm4:1476): xfwm4-WARNING **: 08:39:18.415: output size (800x600) and logical screen size (1920x1200) do not match
+Warning: 'sandbox' is not in the list of known options, but still passed to Electron/Chromium.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1874) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1989) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:1989) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+/usr/lib/python3/dist-packages/blueman/plugins/applet/AppIndicator.py:8: PyGIWarning: AppIndicator3 was imported without specifying a version first. Use gi.require_version('AppIndicator3', '0.1') before import to ensure that the right version gets loaded.
+  from gi.repository import AppIndicator3 as girAppIndicator
+ERROR:dbus.proxies:Introspect error on org.bluez:/org/bluez: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+ERROR:dbus.proxies:Introspect error on org.bluez:/: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+ERROR:dbus.proxies:Introspect error on org.bluez:/: dbus.exceptions.DBusException: org.freedesktop.DBus.Error.TimedOut: Failed to activate service 'org.bluez': timed out (service_start_timeout=25000ms)
+/var/lib/dpkg/lock: 
+
+(xfce4-terminal:2006): Gdk-CRITICAL **: 10:03:29.204: gdk_window_get_window_type: assertion 'GDK_IS_WINDOW (window)' failed
+Warning: 'sandbox' is not in the list of known options, but still passed to Electron/Chromium.
+bash: cannot set terminal process group (-1): Inappropriate ioctl for device
+bash: no job control in this shell
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:14973) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:15040) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+(node:15040) Electron: Loading non context-aware native modules in the renderer process is deprecated and will stop working at some point in the future, please see https://github.com/electron/electron/issues/18397 for more information
+xfwm4: Fatal IO error 4 (Interrupted system call) on X server :0.0.
+xfdesktop: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.

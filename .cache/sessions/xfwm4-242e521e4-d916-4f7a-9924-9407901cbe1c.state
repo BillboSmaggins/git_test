@@ -1,0 +1,13 @@
+[CLIENT] 0x4200003
+  [CLIENT_ID] 2df14af01-01a7-405b-9b83-7e88d02423a3
+  [CLIENT_LEADER] 0x4200001
+  [WINDOW_ROLE] xfce4-terminal-1598637944-85742233
+  [RES_NAME] xfce4-terminal
+  [RES_CLASS] Xfce4-terminal
+  [WM_NAME] Terminal - billbosmaggins@billbosmaggins-VirtualBox: ~/Desktop
+  [WM_COMMAND] (1) "xfce4-terminal"
+  [GEOMETRY] (961,49,955,1137)
+  [GEOMETRY-MAXIMIZED] (671,430,577,387)
+  [SCREEN] 0
+  [DESK] 0
+  [FLAGS] 0x10100

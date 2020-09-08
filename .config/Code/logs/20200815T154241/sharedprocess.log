@@ -1,0 +1,9 @@
+[2020-08-15 15:42:45.687] [sharedprocess] [info] main {"machineId":"84104992f1ee07a4746b2c82d6557e0863897b503c1c47994d36207829e4bf03","windowId":2}
+[2020-08-15 15:42:45.785] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/billbosmaggins/.config/Code/User/snippets'
+[2020-08-15 15:43:25.737] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-15 15:45:14.647] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2020-08-15 15:45:15.208] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /home/billbosmaggins/.config/Code/CachedExtensionVSIXs/ritwickdey.liveserver-5.6.1
+[2020-08-15 15:45:19.883] [sharedprocess] [info] Extracted extension to /home/billbosmaggins/.vscode/extensions/.ritwickdey.liveserver-5.6.1: ritwickdey.liveserver
+[2020-08-15 15:45:19.884] [sharedprocess] [info] Renamed to /home/billbosmaggins/.vscode/extensions/ritwickdey.liveserver-5.6.1
+[2020-08-15 15:45:19.885] [sharedprocess] [info] Installation completed. ritwickdey.liveserver
+[2020-08-15 15:45:19.913] [sharedprocess] [info] Extensions installed successfully: ritwickdey.liveserver

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--
+    .
+  .o8
+.odin8o  .odino.  oo.ooooo.
+  888   d88' `88b  888' `88b
+  888   888   888  888   888
+  888 . 888   888  888   888
+  "888" `Y8odinP'  888bod8P'
+                   888
+                  odin!
+
+
+Our full stack curriculum is free and supported by a passionate open source community. Do you want to contribute? Chat with us at https://discord.gg/V75WSQG
+-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05FQlVHWwdnQwMGUUpOXllZVg==","queueTime":2,"applicationTime":42,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"17c82925e3",applicationID:"2418536"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Odin Project empowers aspiring web developers to learn together">
+  <meta name="keywords" content="learn web development, learn ruby on rails, ruby on rails, ruby, rails">
+  <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-003bdac3098010b4f1143000a941b80c67eebd74fbc6f36b2e7ef92dd03e8020.png">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="Qr0XjfCvBiB6E6cBytfpcGsbmgfnFtyxnc8GrInpX7gI8De5TTT1sqyMMSFnN5pyslRVOIRZ2ORq+V4q2RMbcA==" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <title>
+    Your Career in Web Development Starts Here | The Odin Project
+  </title>
+
+  <link rel="stylesheet" media="all" href="/assets/application_stylesheet-a0d91fb412ac96f60dfbdc0770fce1a074236468b4d276ff02378121ab47d15e.css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:300,300italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" media="screen" href="/packs/css/application-65bb1d06.css" data-turbolinks-track="reload" />
+  <script src="/packs/js/application-fc89b96b2b21313ecf3b.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="UQk07mLD2zQBlLlNeJmUjXwET+8t6YC7BIUhH1dY+08bRBTa31goptcLL23VeeePpUuA0E6mhO7zs3mZB6K/hw==" />
+</head>
+
+
+  <body class="line-numbers">
+    <div id="global-content-wrapper">
+      <div id="navbar-supported-content" class="modal modal-fullscreen-menu fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="navbar-brand">
+          <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+        </div>
+        <button aria-label="Close" type="button" class="close" data-dismiss="modal">
+          <span class="sr-only">Close navigation</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+      <ul class="modal-links">
+          <li class="nav-item ">
+            <a class="nav-link" href="/tracks">Curriculum</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#collapseCommunity" role="button" aria-expanded="false" aria-controls="collapseCommunity">
+              Community
+            </a>
+            <div class="collapse" id="collapseCommunity">
+              <a class="nav-link" href="https://forum.theodinproject.com">Forum</a>
+              <a class="nav-link discord-chat-link" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">Chat</a>
+            </div>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/about?ref=homenav">About</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/faq?ref=homehav">FAQ</a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/sign_up?ref=homenav">Sign Up</a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/login?ref=homenav">Log In</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-expand-md navbar-light">
+  <div class="navbar-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+
+  <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="modal" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggler-icon open"></span>
+    <span class="sr-only">Open navigation</span>
+  </button>
+
+    <nav class="collapse navbar-collapse">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="/tracks">Curriculum</a>
+        </li>
+        <li class="nav-item dropdown js-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right menu-options pb-0">
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+                <span class="drop-down-logo fas fa-users mt-2"></span>Forum
+</a>            </li>
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">
+                <span class="drop-down-logo fas fa-comment mt-2"></span>Chat
+</a>            </li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/about?ref=homenav">About</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/faq?ref=homehav">FAQ</a>
+        </li>
+
+        <li class="divider nav-link">|</li>
+
+        <li class="nav-item ">
+          <a class="nav-link" href="/sign_up?ref=homenav">Sign Up</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/login?ref=homenav">Log In</a>
+        </li>
+      </ul>
+    </nav>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="nav-spacer"></div>
+
+<div class="container">
+</div>
+
+
+
+
+
+
+      <div id="home-page">
+  <div class="hero gradient">
+    <header>
+      <h1 class="accent hero__main-heading"> Your Career in Web Development Starts Here </h1>
+      <p class="secondary hero__sub-heading"> Our full stack curriculum is free and supported by a passionate open source community.</p>
+        <a class="button button--primary" href="/tracks">View Full Curriculum</a>
+    </header>
+    <img class="hero__image" alt="home-page-banner" src="/assets/home-isometric-4a4d2cf949f75c70a7b8c9e976633a3a13f272adc440f306efc9c98a66a2b639.svg" />
+  </div>
+
+  <div class="how-it-works">
+  <div class="how-it-works-title">
+    <div class="container">
+      <h2 class="bold">How it works</h2>
+      <p>This is the website we wish we had when we were learning on our own. We scour the internet looking for only the best resources to supplement your learning and present them in a logical order.</p>
+    </div>
+  </div> <!-- /.how-it-works-title -->
+  <div class="how-it-works-tiles">
+
+    <div class="tile">
+      <img class="how-it-works-image" alt="how-it-works illustration" src="/assets/img-learn-c9dd803d51c0b36d2b47f71937926d3b65e9301ccce1750a3ec84bdde2107430.svg" />
+      <h4 class='bold subtitle'>Learn</h4>
+      <div class="description">
+        <p>Learn from a curriculum with the best curated online tutorials, blogs, and courses.</p>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="how-it-works-image" alt="how-it-works illustration" src="/assets/img-build-082f990452c496b27032ee681f9416c1aa563f35f26ca0f0ced71480204974c4.svg" />
+      <h4 class='bold subtitle'>Build</h4>
+      <div class="description">
+        <p>Build dozens of portfolio-worthy projects along the way, from simple scripts to full programs and deployed websites.</p>
+      </div>
+    </div>
+    <div class="tile">
+      <img class="how-it-works-image" alt="how-it-works illustration" src="/assets/img-connect-08d890b9f4e21d5e4a816412d7db4576250a1fcd294628060202637e1cc976d9.svg" />
+      <h4 class='bold subtitle'>Connect</h4>
+      <div class="description">
+        <p>Youâ€™re not alone. Learn and get help from our friendly community of beginner and experienced developers.</p>
+      </div>
+    </div>
+
+  </div> <!-- /.how-it-works-tiles -->
+</div> <!-- /.how-it-works -->
+
+
+  <div class="curriculum-details bg-whitesmoke">
+  <div class="curriculum-details-title">
+    <h2 class="bold">Learn everything you need to know to become a web developer</h2>
+  </div> <!-- /.curriculum-details-title -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-10 offset-xl-1">
+        <div class="row curriculum-details-grid">
+
+            <a class="curriculum-details-tile align-items-center" href="/courses/html-and-css">  
+              <img alt="html css badge" src="/assets/badge-html-css-f0cd817affb9c40014c8fee177bc60602fc19dbe36c7403c39db7591a3fbfae0.svg" />
+                <h4 class="bold text-uppercase">
+                  HTML + CSS
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/javascript">  
+              <img alt="javascript badge" src="/assets/badge-javascript-152783091981ef6200dfd5b2a331e600f022b1aecca5d93d6527a2da41ea8973.svg" />
+                <h4 class="bold text-uppercase">
+                  JavaScript
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/web-development-101#git-basics">  
+              <img alt="git badge" src="/assets/badge-git-02d0a9f9704bede249c80b9ebc2e1dd95ae5b3cd7118ac6f2e325892513fa021.svg" />
+                <h4 class="bold text-uppercase">
+                  Git
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/databases">  
+              <img alt="databases badge" src="/assets/badge-database-ab04cd637b9dd1bd35efaed2c4e6d81d772242b4eb3054a5cc1240e9df6214ef.svg" />
+                <h4 class="bold text-uppercase">
+                  Databases
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/ruby-programming">  
+              <img alt="ruby badge" src="/assets/badge-ruby-fd7899feb349ca40b25c5962402b0af43b9c5025630918642b230b9b58533a1c.svg" />
+                <h4 class="bold text-uppercase">
+                  Ruby
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/ruby-on-rails">  
+              <img alt="ruby on rails badge" src="/assets/badge-ruby-on-rails-091ce34e6c08a22d1d64365955f7d8c7e39b7339828b7cf472afee44ad144ace.svg" />
+                <h4 class="bold text-uppercase">
+                  Ruby on Rails
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/nodejs">  
+              <img alt="nodejs badge" src="/assets/badge-nodejs-48163fa5a0f0fb693db213ab110f63ca51e1ff18f88748572978f85989a1a5fe.svg" />
+                <h4 class="bold text-uppercase">
+                  NodeJS
+                </h4>
+</a>            <a class="curriculum-details-tile align-items-center" href="/courses/getting-hired">  
+              <img alt="getting hired badge" src="/assets/badge-getting-hired-f1f20b847141831a133bf9e9737e1f3d9b8e740e649ee7fe616e900dd57f89d3.svg" />
+                <h4 class="bold text-uppercase">
+                  Getting Hired
+                </h4>
+</a>          
+        </div>
+      </div>
+    </div> <!-- /.row -->
+
+    <div class="text-center">
+      <a class="button button--secondary" href="/courses">Get Started</a>
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</div>
+
+
+  <div class="success-stories gradient">
+  <div class="success-stories-title">
+    <h2 class="bold">Success Stories</h2>
+  </div>
+
+  <div class="success-stories-container">
+    <div class="success-story">
+      <div class="photo"> <img src="/assets/success_stories/rob_pando-f2194968f4016acc8e645d4f28f34556e5a2e835a671df54003b6e2b53a432a2.jpg" /> </div>
+
+      <div class="success-content">
+	       <div class="details">
+           <p><a class="accent" href="https://github.com/RobPando">Rob Pando</a></p>
+	       </div>
+         <p>TOP was a perfect match for my learning style. Not walking me through an entire project but actually forcing me to figure it out on my own, by pointing me...</p>
+      </div>
+    </div>
+    <div class="success-story">
+      <div class="photo"> <img src="/assets/success_stories/olivia-29778ae767170b399ce62a5adf68e71ad31801b2afa9aa085cadd9fb6cfb8048.jpg" /> </div>
+
+      <div class="success-content">
+	       <div class="details">
+           <p><a class="accent" href="https://codemethisolivia.com/">Olivia</a></p>
+	       </div>
+         <p>Before I found TOP, I was jumping from Coursera course to Coursera course without really any guidance or community. I wanted to get a real development job and not operating...</p>
+      </div>
+    </div>
+    <div class="success-story">
+      <div class="photo"> <img src="/assets/success_stories/cody_loyd-d1eeea3e2c11372cbb52cb976b0263cc8d380d67fdd64615705cda022736feaa.jpg" /> </div>
+
+      <div class="success-content">
+	       <div class="details">
+           <p><a class="accent" href="http://codyloyd.com/">Cody Loyd</a></p>
+	       </div>
+         <p>Before I started the Odin Project I had literally ZERO programming experience. After almost exactly a year of working through the program, I was offered a job as a front...</p>
+      </div>
+    </div>
+    <div class="success-story">
+      <div class="photo"> <img src="/assets/success_stories/william_kennedy-f7f9b22c511f24eb5ec113f094314b2e1625a9f84ac361ca789d4d4858df5a04.jpg" /> </div>
+
+      <div class="success-content">
+	       <div class="details">
+           <p><a class="accent" href="https://www.new2code.com/about">William Kennedy</a></p>
+	       </div>
+         <p>The Odin Project changed my life and that is not an understatement. In November 2013, I made a commitment to myself to become a self-taught developer so I threw myself...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="success-stories-read-more">
+    <a class="secondary" href="/success_stories">Read more success stories</a>
+  </div> <!-- /.success-stories-read-more -->
+
+  <div class="bottom-cta">
+  <p class="bottom-cta__heading">Start learning for free now!</p>
+
+  <p class="bottom-cta__sub-heading"></p>
+  <a class="button button--primary" href="/sign_up">Sign Up</a>
+</div>
+
+
+</div> <!-- /.success-stories -->
+
+</div>
+
+    </div>
+
+    <footer id="footer">
+  <div class="footer-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/TheOdinProject"><span aria-label="github" class="accent fab fa-github"/></a>
+    <a href="https://discord.gg/V75WSQG"><span aria-label="discord chat" class="accent fab fa-discord"/></a>
+    <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="accent fab fa-facebook"/></a>
+    <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="accent fab fa-twitter"/></a>
+  </div>
+  <div class="footer-links">
+    <div class="footer-links-container">
+      <a class="footer-link" href="/about">About</a>
+      <a class="footer-link" href="/faq">FAQ</a>
+      <a target="_blank" rel="noreferrer" class="footer-link" href="https://medium.com/the-odin-project">Blog</a>
+    </div>
+    <div class="footer-links-container">
+      <a class="footer-link" href="/success_stories">Success Stories</a>
+      <a class="footer-link" href="/contributing">Contribute</a>
+      <a class="footer-link" href="/terms_of_use">Terms of Use</a>
+    </div>
+  </div>
+
+</footer>
+
+    <div class="floating-dropdown">
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Chat'>
+    <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/V75WSQG">
+      <i class="fas fa-comment"></i>
+</a>  </div>
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Forum'>
+    <a target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+      <i class="fas fa-users" aria-hidden="true"></i>
+</a>  </div>
+  <div class="floating-dropdown__item main-floating-btn">
+    <i class="fas fa-comments" aria-hidden="true"></i>
+  </div>
+</div>
+
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+  
+  
+
+  <script type="text/javascript">  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+    <!-- FB pixel -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '204929933721168'); 
+    fbq('track', 'PageView');
+</script>
+<noscript>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=204929933721168&ev=PageView&noscript=1"/>
+</noscript>
+
+  </body>
+</html>
+)àå<       _8d6_8dTB mP_8d6        :https://www.theodinproject.com/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Sat, 15 Aug 2020 22:39:47 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Etag: W/"bf0ac8bd321a0cf1550665346d740d21"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 1686956f-25b3-4aa8-b217-91968718744a
+X-Runtime: 0.041438
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Via: 1.1 vegur
+ original-response-headers Server: Cowboy
+Date: Sat, 15 Aug 2020 22:39:47 GMT
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Etag: W/"bf0ac8bd321a0cf1550665346d740d21"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _theodinproject_session=Z3ltZzY0M2o4MXFUZDRZN25VTEtLbUdyUFhaRFRIU2FYMC9GS3MvWklNMzF4aW5rWjdkYXlYcHdMeHVLdGhmY1o2L1ZJcGkzZGJ5UTlRN3FVeXhFNm5ZUk5nMmJuZDhzbFoyemlpU2Y4TTNQY3NrRC9BdkYxa1NxV0IzcTVjbXAxb0U0SnAwNm9vZ09DN1hIKzVuRmdBPT0tLTJDNmJSMlJES0NPTTJzSlQ0WnBpb1E9PQ%3D%3D--9ce8d9c0a8b2c6794ee1a9cdf5cbffd8e44f78c8; path=/; secure; HttpOnly
+X-Request-Id: 1686956f-25b3-4aa8-b217-91968718744a
+X-Runtime: 0.041438
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Transfer-Encoding: chunked
+Via: 1.1 vegur
+ ctid 1 uncompressed-len 0 net-response-time-onstart 520 net-response-time-onstop 528 predictor::resource-count 34 predictor::https://www.theodinproject.com/assets/application_stylesheet-a0d91fb412ac96f60dfbdc0770fce1a074236468b4d276ff02378121ab47d15e.css 1,1,1597531190,4096 predictor::https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:300,300italic,400,700 1,1,1597531190,4096 predictor::https://use.fontawesome.com/releases/v5.7.2/css/all.css 1,1,1597531190,4096 predictor::https://www.theodinproject.com/packs/css/application-65bb1d06.css 1,1,1597531190,4096 predictor::https://www.theodinproject.com/packs/js/application-fc89b96b2b21313ecf3b.js 1,1,1597531190,4096 predictor::https://www.theodinproject.com/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/home-isometric-4a4d2cf949f75c70a7b8c9e976633a3a13f272adc440f306efc9c98a66a2b639.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/img-learn-c9dd803d51c0b36d2b47f71937926d3b65e9301ccce1750a3ec84bdde2107430.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/img-build-082f990452c496b27032ee681f9416c1aa563f35f26ca0f0ced71480204974c4.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/img-connect-08d890b9f4e21d5e4a816412d7db4576250a1fcd294628060202637e1cc976d9.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-html-css-f0cd817affb9c40014c8fee177bc60602fc19dbe36c7403c39db7591a3fbfae0.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-javascript-152783091981ef6200dfd5b2a331e600f022b1aecca5d93d6527a2da41ea8973.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-git-02d0a9f9704bede249c80b9ebc2e1dd95ae5b3cd7118ac6f2e325892513fa021.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-database-ab04cd637b9dd1bd35efaed2c4e6d81d772242b4eb3054a5cc1240e9df6214ef.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-ruby-fd7899feb349ca40b25c5962402b0af43b9c5025630918642b230b9b58533a1c.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-ruby-on-rails-091ce34e6c08a22d1d64365955f7d8c7e39b7339828b7cf472afee44ad144ace.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-nodejs-48163fa5a0f0fb693db213ab110f63ca51e1ff18f88748572978f85989a1a5fe.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/badge-getting-hired-f1f20b847141831a133bf9e9737e1f3d9b8e740e649ee7fe616e900dd57f89d3.svg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/success_stories/rob_pando-f2194968f4016acc8e645d4f28f34556e5a2e835a671df54003b6e2b53a432a2.jpg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/success_stories/olivia-29778ae767170b399ce62a5adf68e71ad31801b2afa9aa085cadd9fb6cfb8048.jpg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/success_stories/cody_loyd-d1eeea3e2c11372cbb52cb976b0263cc8d380d67fdd64615705cda022736feaa.jpg 1,1,1597531190,4097 predictor::https://www.theodinproject.com/assets/success_stories/william_kennedy-f7f9b22c511f24eb5ec113f094314b2e1625a9f84ac361ca789d4d4858df5a04.jpg 1,1,1597531190,4097 predictor::https://fonts.googleapis.com/css?family=Open+Sans:300,400,700 1,1,1597531190,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1597531190,4096 predictor::https://connect.facebook.net/en_US/fbevents.js 1,1,1597531190,4096 predictor::https://www.theodinproject.com/assets/Norse-Bold-f675f9aaa02f9af3892214b1a63cb038a18d870d484a9eab34fba266583a26cf.otf 1,1,1597531190,4096 predictor::https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2 1,1,1597531190,4096 predictor::https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2 1,1,1597531190,4096 predictor::https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2 1,1,1597531190,4096 predictor::https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-brands-400.woff2 1,1,1597531190,4096 predictor::https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-solid-900.woff2 1,1,1597531190,4096 predictor::https://connect.facebook.net/signals/config/204929933721168?v=2.9.23&r=stable 1,1,1597531190,4096 predictor::https://www.facebook.com/tr/?id=204929933721168&ev=PageView&dl=https%3A%2F%2Fwww.theodinproject.com%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1597531192257&sw=800&sh=600&v=2.9.23&r=stable&ec=0&o=30&fbp=fb.1.1597531192253.1660135963&it=1597531191890&coo=false&rqm=GET 1,1,1597531190,4096 predictor::https://js-agent.newrelic.com/nr-1173.min.js 1,1,1597531190,4096   f

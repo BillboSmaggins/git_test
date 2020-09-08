@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--
+    .
+  .o8
+.odin8o  .odino.  oo.ooooo.
+  888   d88' `88b  888' `88b
+  888   888   888  888   888
+  888 . 888   888  888   888
+  "888" `Y8odinP'  888bod8P'
+                   888
+                  odin!
+
+
+Our full stack curriculum is free and supported by a passionate open source community. Do you want to contribute? Chat with us at https://discord.gg/V75WSQG
+-->
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"17c82925e3","applicationID":"2418536","transactionName":"d1xcEEpcDg1RS05aU0dAXQpLHBEJW04=","queueTime":4,"applicationTime":113,"agent":""}</script>
+<script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"17c82925e3",applicationID:"2418536"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1173.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Odin Project empowers aspiring web developers to learn together">
+  <meta name="keywords" content="learn web development, learn ruby on rails, ruby on rails, ruby, rails">
+  <meta property="og:image" content="https://www.theodinproject.com/assets/og-logo-003bdac3098010b4f1143000a941b80c67eebd74fbc6f36b2e7ef92dd03e8020.png">
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="pFIBABbjyhRPjP5j8vtdkvc6JtxtmoP6hpHJJ1Kms2i2BK4OgjJTXCPGFEuRVpfjRa6VjoK6W9qJoRThhlS7Jg==" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <title>
+    Text Editors | The Odin Project
+  </title>
+
+  <link rel="stylesheet" media="all" href="/assets/application_stylesheet-a0d91fb412ac96f60dfbdc0770fce1a074236468b4d276ff02378121ab47d15e.css" />
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700,300italic|Open+Sans:300,300italic,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <link rel="stylesheet" media="screen" href="/packs/css/application-65bb1d06.css" data-turbolinks-track="reload" />
+  <script src="/packs/js/application-fc89b96b2b21313ecf3b.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="cbkPVjFHh47K88Wrdpx6OD8KEQ2DLb1y/0FyH9/6jgZj76BYpZYexqa5L4MVMbBJjZ6iX2wNZVLwca/ZCwiGSA==" />
+</head>
+
+
+  <body class="line-numbers">
+    <div id="global-content-wrapper">
+      <div id="navbar-supported-content" class="modal modal-fullscreen-menu fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="navbar-brand">
+          <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+        </div>
+        <button aria-label="Close" type="button" class="close" data-dismiss="modal">
+          <span class="sr-only">Close navigation</span>
+          <span class="close-icon">&times;</span>
+        </button>
+      </div>
+      <ul class="modal-links">
+          <li class="nav-item ">
+            <a class="nav-link" href="/dashboard?ref=homenav">Dashboard</a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" href="/tracks/1">Curriculum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://forum.theodinproject.com">Forum</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link discord-chat-link" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">Chat</a>
+          </li>
+
+          <div class="dropdown-divider"></div>
+          <li class="nav-item ">
+            <a class="nav-link" href="/users/edit">Settings</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/logout?ref=homenav">Log Out</a>
+          </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="navbar navbar-expand-md navbar-light">
+  <div class="navbar-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+
+  <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="modal" data-target="#navbar-supported-content" aria-controls="navbar-supported-content" aria-expanded="false" aria-label="toggle-navigation">
+    <span class="navbar-toggler-icon open"></span>
+    <span class="sr-only">Open navigation</span>
+  </button>
+
+    <nav class="collapse navbar-collapse">
+      <!-- Full Width Navbar -->
+      <ul class="navbar-nav ml-auto hidden-md-down">
+        <li class="nav-item ">
+          <a class="nav-link" href="/tracks/full-stack-ruby-on-rails">My Courses</a>
+        </li>
+        <li class="nav-item dropdown js-dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Community
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right menu-options pb-0">
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+                <span class="drop-down-logo fas fa-users mt-2"></span>Forum
+</a>            </li>
+            <li>
+              <a class="drop-down-link accent" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">
+                <span class="drop-down-logo fas fa-comment mt-2"></span>Chat
+</a>            </li>
+          </ul>
+        </li>
+
+        <li class="divider nav-link">|</li>
+        <div class="dropdown js-dropdown">
+  <button class="avatar" aria-label="User Menu" style="background-image:url(https://lh3.googleusercontent.com/a-/AOh14GjtsZmWQ5atf1PHQVvlNylXp7-0e4EWF77b_213UQ)" data-toggle="dropdown"></button>
+  <ul class="dropdown-menu menu-options">
+    <li id="dash-active">
+      <a class="drop-down-link accent " href="/dashboard">
+        <span class="drop-down-logo dashboard-logo"></span>Dashboard
+</a>    </li>
+    <li>
+      <a class="drop-down-link accent " href="/users/edit">
+        <span class="drop-down-logo settings-logo"></span>Settings
+</a>    </li>
+    <li>
+      <a class="drop-down-link accent" href="/logout?ref=homenav">
+        <span class="drop-down-logo logout-logo"></span>Log out
+</a>    </li>
+  </ul>
+</div>
+
+      </ul>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="nav-spacer"></div>
+
+<div class="container">
+</div>
+
+
+
+
+
+
+      
+
+<div class="container lesson">
+  <div class="row">
+    <div class="col-12">
+      <div class="lesson-header">
+        <a class="course-card-header__link" href="/courses/web-development-101">
+          <div class="banner">
+  <div class='banner__badge'>
+      <div class="course-badge progress-circle " data-progress="22">
+    <div class="progress-circle__inner">
+      <img alt="Web Development 101 badge" class="progress-circle__image" src="/assets/badges/badge-webdev-101-borderless-b02fdc17c52685825be195d14cb097e78538b4821534b7494416f0232ce49c95.svg" />
+      <p class="bold progress-circle__content">22%</p>
+      <p class="progress-circle__content">COMPLETE</p>
+    </div>
+  </div>
+
+  </div>
+  <h1 class="banner__title">Web Development 101</h1>
+</div>
+
+</a>        <h2 class="lesson-header__title accent">Text Editors</h2>
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+      <div class="d-none d-lg-block d-xl-block lesson-navigation"></div>
+    </div>
+
+    <div class="col-lg-9">
+      <div class="lesson-content">
+        <h3 id="introduction">Introduction</h3>
+<p>A text editor is by far the most used developer tool regardless of what type of developer you are. A good text editor can help you write better code with real-time code checking, syntax highlighting, and automatic formatting.</p>
+
+<h3 id="why-cant-i-use-microsoft-word">Why can’t I use Microsoft Word?</h3>
+
+<p>Rich text editors, such as Microsoft Word and Libre-Office Writer, are great for writing a paper, but the features that make them good at creating nicely formatted documents make them unsuitable for writing code. A document created with these rich text editors have more than just text embedded in their files. These files also contain information on how to display the text on the screen and data on how to display graphics embedded into the document. In contrast, plain text editors, such as VSCode and Sublime, don’t save any additional information. Saving only the text allows other programs, like Ruby’s interpreter, to read and execute the file as code.</p>
+
+<h3 id="code-editors">Code Editors</h3>
+
+<p>You can think of code editors as specialized web development tools. They are highly customizable and offer many features that will make your life easier. There is nothing worse than spending 2 hours trying to figure out why your program isn’t working only to realize that you missed a closing bracket. Plugins, syntax highlighting, auto-closing of brackets and braces, and linting are just a few of the benefits of using a code editor. There are many text editors out there to choose from, but we suggest starting with VSCode.</p>
+
+<p><strong>VSCode</strong> is an excellent free code editor. It has outstanding add-on support and great Git integration. VSCode is the most popular code editor among Odin’s students and moderators, so support is easy to find in the community. You can download the .deb file and install it from <a href="https://code.visualstudio.com/">here</a>.</p>
+
+<p>Which editor you use is generally a matter of preference, but for the purposes of this course, we are going to assume you’re using VSCode, mainly because it’s free, it’s easy to use, and it works pretty much the same on every operating system. If you want to use something else, do it. However, using something other than VSCode may make it more difficult to get help in the chat room.</p>
+
+<p>As a reminder, if you’re using a <strong>virtual machine</strong>, you should install your text editor of choice <strong>on your VM</strong>. You’re welcome to also install it on your host (i.e., your Windows main OS), but you’ll want to be sure that you have this critical tool inside your VM.</p>
+
+<h3 id="opening-vscode-from-the-command-line">Opening VSCode from the Command Line</h3>
+
+<p>On Windows and Linux, you can open VSCode from the command line by typing <code>code</code>, and you can open folders or files by adding the name of the location after it: <code>code my_first_rails_app/</code>.</p>
+
+<h4 id="macos-users">MacOS Users:</h4>
+
+<p>MacOS can do this too, but you need to set it up. After installing VSCode, launch it any way you’re comfortable with. Once it’s running, open the Command palette with <code>CMD + Shift + P</code>. In the little dialog that appears, type <code>shell command</code>. One of the choices that appears will be <code>Shell Command: Install 'code' command in PATH</code>. Select that option, and restart the terminal if you have it open.</p>
+
+<h5 id="regarding-security-warning">Regarding Security Warning:</h5>
+
+<p>A message may show, warning the user that VSCode is not trusted software. This is an expected message. VSCode can be trusted, therefore it is safe to ignore this warning.</p>
+
+<h4 id="wsl-users">WSL Users:</h4>
+
+<p>Although you just installed Ubuntu on your computer, you should still install the Windows version of the code editor you choose. You will edit the files in your Projects directory with the code editor, and WSL will be able to read these files. If you are using VSCode, be sure to install the <em>“Remote - WSL”</em> extension when prompted. This extension will allow you to directly access your Linux files. Once installed, select the green icon in the lower left corner to connect to WSL.</p>
+
+<h3 id="additional-set-up-live-server-extension-for-vscode">Additional Set Up: Live Server Extension for VSCode</h3>
+
+<p>An extension is a program that is meant to enhance your experience by modifying the capabilities of a software.</p>
+
+<p>Just like the Google Chrome Web Browser, VSCode supports extensions and one useful one is <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a>. It has been made to save the time of developers like yourself. This extension will save you from the hassle of refreshing the browser window repeatedly to see changes made in your code and will automatically load the most recent change in the browser window.</p>
+
+<p>Refer to <a href="https://youtu.be/mGORIVStWWc">this video</a> for installation details.</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="lesson-functions">
+  <div class="container">
+    <div class="card-main">
+
+
+      <div class="lesson-button-group">
+        <a title="Go back to &#39;Web Development 101&#39;" class="button button--secondary lesson-button-group__item lesson-button" href="/courses/web-development-101?ref=lnav">View Course</a>
+
+    <a class="button button--primary lesson-button-group__item lesson-button" title="Mark lesson complete" data-disable-with="submitting" data-remote="true" rel="nofollow" data-method="post" href="/lessons/text-editors/lesson_completions">
+    <i class="lesson-button__icon far fa-check-circle" aria-hidden="true"></i>Complete
+</a>
+
+
+  <a title="Move on to &#39;Command Line Basics&#39;" class="button button--secondary lesson-button-group__item lesson-button" href="/courses/web-development-101/lessons/command-line-basics-web-development-101?ref=lnav">Next Lesson</a>
+
+      </div>
+    </div>
+
+    <a target="_blank" rel="noreferrer noopener" class="lesson-functions__edit-lesson-link" href="https://github.com/TheOdinProject/curriculum/edit/master/web_development_101/installations/text_editors.md">
+      <span class="fab fa-github mr-1"></span>
+      <span> Improve this lesson on GitHub</span>
+</a>
+    <div class="bottom-cta">
+  <p class="bottom-cta__heading">Have a question?</p>
+
+  <p class="bottom-cta__sub-heading">Chat with our friendly Odin community in our Discord chatrooms!</p>
+  <a class="button button--secondary" target="_blank" rel="noreferrer" href="https://discord.gg/V75WSQG">Open Discord</a>
+</div>
+
+
+    <div class="card-main advert">
+  <div class="advert__header">
+    <h2 class="advert__pitch">Are you interested in accelerating your web development learning experience?</h2>
+    <a href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=web-dev-3-icons" class="button button--primary">Get started</a>
+  </div>
+  <div class="advert__body">
+    <a href="https://www.thinkful.com/?utm_source=odin&utm_medium=cpc&utm_campaign=odin-homepage&utm_content=tf-logo" alt="Thinkful" class="advert__brand-anchor">
+        <div class="advert__brand">
+          <img alt="Thinkful Logo" class="advert__logo" src="/assets/advert/thinkful-logo-4ecc10f814f1a7a540fd75d22ed17ba791aaeef094b979c70109d58080d36173.svg" />
+          <h2 class="advert__brand-name">Thinkful</h2>
+        </div>
+    </a>
+    <ul class="advert__icons-group">
+      <li class="advert__icons-group-item">
+        <img alt="5-6 months" class="advert__icon" src="/assets/advert/icon-calendar-3b39ee5c660dba03d8d9450d3cd996c66674b2363b17a98c7ec42c436db607bc.svg" />
+        <p class="advert__icon-text">5-6 months</p>
+      </li>
+
+      <li class="advert__icons-group-item">
+        <img alt="Job Guarantee" class="advert__icon" src="/assets/advert/icon-guarantee-6e25ceaa23d8c74c78be566c4a30cd966500f9b710d4e8ed13016ca8d9002b7f.svg" />
+        <p class="advert__icon-text">Job Guarantee</p>
+      </li>
+
+      <li class="advert__icons-group-item">
+        <img alt="1-on-1 Mentorship" class="advert__icon" src="/assets/advert/icon-mentor-4ae8e857dff8767d10b98c93f00a6cadc908f36835547a9f26490759e21ae3c2.svg" />
+        <p class="advert__icon-text">1-on-1 Mentorship</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+  </div>
+</div>
+
+    </div>
+
+    <footer id="footer">
+  <div class="footer-brand">
+    <a class="logo" href="https://www.theodinproject.com/home">
+  <img class="logo__img" src="/assets/odin-logo-2d729f16279e9fc3b58ce847eacf07f883bdfc95eb23bb5064ed59d36ef551d6.svg" />
+  <div class="logo__text"> The Odin Project </div>
+</a>
+  </div>
+  <div class="footer-social">
+    <a href="https://github.com/TheOdinProject"><span aria-label="github" class="accent fab fa-github"/></a>
+    <a href="https://discord.gg/V75WSQG"><span aria-label="discord chat" class="accent fab fa-discord"/></a>
+    <a href="https://www.facebook.com/theodinproject/"><span aria-label="facebook" class="accent fab fa-facebook"/></a>
+    <a href="https://twitter.com/TheOdinProject"><span aria-label="twitter" class="accent fab fa-twitter"/></a>
+  </div>
+  <div class="footer-links">
+    <div class="footer-links-container">
+      <a class="footer-link" href="/about">About</a>
+      <a class="footer-link" href="/faq">FAQ</a>
+      <a target="_blank" rel="noreferrer" class="footer-link" href="https://medium.com/the-odin-project">Blog</a>
+    </div>
+    <div class="footer-links-container">
+      <a class="footer-link" href="/success_stories">Success Stories</a>
+      <a class="footer-link" href="/contributing">Contribute</a>
+      <a class="footer-link" href="/terms_of_use">Terms of Use</a>
+    </div>
+  </div>
+
+</footer>
+
+    <div class="floating-dropdown">
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Chat'>
+    <a target="_blank" rel="noreferrer" class="chat-floating-btn" href="https://discord.gg/V75WSQG">
+      <i class="fas fa-comment"></i>
+</a>  </div>
+  <div class="floating-dropdown__item floating-dropdown--hidden-item text-center" data-toggle='tooltip' data-placement='left' title='Forum'>
+    <a target="_blank" rel="noreferrer" href="https://forum.theodinproject.com">
+      <i class="fas fa-users" aria-hidden="true"></i>
+</a>  </div>
+  <div class="floating-dropdown__item main-floating-btn">
+    <i class="fas fa-comments" aria-hidden="true"></i>
+  </div>
+</div>
+
+    <!-- Google Analytics Tracking Snippet -->
+<!-- Only load it if we're in a production environment! -->
+  
+  
+
+  <script type="text/javascript">  
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-41005438-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+    
+  </body>
+</html>
+Ni��7A      _8df_8iUB mq_8df   4    :https://www.theodinproject.com/lessons/text-editors necko:classified 1 strongly-framed 1 security-info FnhllAKWRHGAlo+ESXykKAAAAAAAAAAAwAAAAAAAAEaphjojH6pBabDSgSnsfLHeAAAAAgAAAAAAAAAAAAAAAAAAAAEANQFmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAAV8MIIFeDCCBGCgAwIBAgISBJ2hcXCiLAJdKOJnza3L9rsLMA0GCSqGSIb3DQEBCwUAMEoxCzAJBgNVBAYTAlVTMRYwFAYDVQQKEw1MZXQncyBFbmNyeXB0MSMwIQYDVQQDExpMZXQncyBFbmNyeXB0IEF1dGhvcml0eSBYMzAeFw0yMDA3MjIwMDMxNTZaFw0yMDEwMjAwMDMxNTZaMCExHzAdBgNVBAMTFnd3dy50aGVvZGlucHJvamVjdC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDEwXTb0q355giHbZul/PFbk4zyCIb+b5d0r5qsp89TwYvx4ONhlipFS36OTdKiI2GdT/i87mRQk+7uSnYP/OUCf5uu9AHSNTTbLcVFZcBh/uaGeJkLKtpdGBupfmsjKhx4i0cc6T56oi9xDYTN2I1BjGctUvTs8oyOihVgt/WSuXwAgWwKvi+abqkNVsfRbZzvqAgGpNFUCBUZhNUSNXC6CPT9bKkTqakfZ4n+xz5nUFeAteHB15GZJRLtBEpvIDqdtRFBBm+09IIZOgZGuLSNOaMr/OrVrEicPJJFc+M/zmqZrB1hZIRx+wc47tmawxS5AROv3SlWLptbyYk3N/6HAgMBAAGjggJ/MIICezAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwHQYDVR0OBBYEFGbybGjaitkrK27eM7ts9OjPHLppMB8GA1UdIwQYMBaAFKhKamMEfd265tE5t6ZFZe/zqOyhMG8GCCsGAQUFBwEBBGMwYTAuBggrBgEFBQcwAYYiaHR0cDovL29jc3AuaW50LXgzLmxldHNlbmNyeXB0Lm9yZzAvBggrBgEFBQcwAoYjaHR0cDovL2NlcnQuaW50LXgzLmxldHNlbmNyeXB0Lm9yZy8wNQYDVR0RBC4wLIISdGhlb2RpbnByb2plY3QuY29tghZ3d3cudGhlb2RpbnByb2plY3QuY29tMEwGA1UdIARFMEMwCAYGZ4EMAQIBMDcGCysGAQQBgt8TAQEBMCgwJgYIKwYBBQUHAgEWGmh0dHA6Ly9jcHMubGV0c2VuY3J5cHQub3JnMIIBBAYKKwYBBAHWeQIEAgSB9QSB8gDwAHYAB7dcG+V9aP/xsMYdIxXHuuZXfFeUt2ruvGE6GmnTohwAAAFzdCYIqQAABAMARzBFAiA4XFgaFNSdGGFjDfE1r5BtDuFq+jLRxIKzn/rLGfuorQIhAK0XxuijwCDVZm3FHS1O4g7Ml2aNFdXzgM3bfj6oIjtfAHYAb1N2rDHwMRnYmQCkURX/dxUcEdkCwQApBo2yCJo32RMAAAFzdCYJDQAABAMARzBFAiEA0jGeZc15TkslSQThXKjbJwgWmWtbbMBDAtAv3V4Enj0CIBq2eYanQyNlejQrrOQGLByY+MAhd/gI+fS88QUe6C9lMA0GCSqGSIb3DQEBCwUAA4IBAQAiGbrpQx1Rw4/urMXmydZDNL8/MI7rqRpxVAD6LfFMpgFoZ1iyzo0YFZtrxBLcdVIeBsjVwmaRlmkCo5XxNBPRACYj358JkcUD0Ziu6joESEIEboQCR2XLRBYYRiLQb0yIuBuu37XfHX7b7be/nSUUy/h+1oYxtZshThv+rrxk4Cv/EFUbvjU61O/ouEKixZG4IW/SB1PjQepDMh0L+D0JxV5mxW+rB+NKq6kQv3VOC1bUpZhiJ+V1L0/0fYi/FYy2QLFfPKoHn7wqxj46n17kQdYpXsBXLLdunnR0aiti20DwF4GPUEovKXXm/e01WFY2xJx9L+7ri1gz3HdjpHQ3wC8AAwAAAAABAQAAAAAAAARQMjU2AAAAEFJTQS1QS0NTMS1TSEEyNTYAA2YKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAABXwwggV4MIIEYKADAgECAhIEnaFxcKIsAl0o4mfNrcv2uwswDQYJKoZIhvcNAQELBQAwSjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMTGkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMB4XDTIwMDcyMjAwMzE1NloXDTIwMTAyMDAwMzE1NlowITEfMB0GA1UEAxMWd3d3LnRoZW9kaW5wcm9qZWN0LmNvbTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMTBdNvSrfnmCIdtm6X88VuTjPIIhv5vl3Svmqynz1PBi/Hg42GWKkVLfo5N0qIjYZ1P+LzuZFCT7u5Kdg/85QJ/m670AdI1NNstxUVlwGH+5oZ4mQsq2l0YG6l+ayMqHHiLRxzpPnqiL3ENhM3YjUGMZy1S9OzyjI6KFWC39ZK5fACBbAq+L5puqQ1Wx9FtnO+oCAak0VQIFRmE1RI1cLoI9P1sqROpqR9nif7HPmdQV4C14cHXkZklEu0ESm8gOp21EUEGb7T0ghk6Bka4tI05oyv86tWsSJw8kkVz4z/OapmsHWFkhHH7Bzju2ZrDFLkBE6/dKVYum1vJiTc3/ocCAwEAAaOCAn8wggJ7MA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADAdBgNVHQ4EFgQUZvJsaNqK2Ssrbt4zu2z06M8cumkwHwYDVR0jBBgwFoAUqEpqYwR93brm0Tm3pkVl7/Oo7KEwbwYIKwYBBQUHAQEEYzBhMC4GCCsGAQUFBzABhiJodHRwOi8vb2NzcC5pbnQteDMubGV0c2VuY3J5cHQub3JnMC8GCCsGAQUFBzAChiNodHRwOi8vY2VydC5pbnQteDMubGV0c2VuY3J5cHQub3JnLzA1BgNVHREELjAsghJ0aGVvZGlucHJvamVjdC5jb22CFnd3dy50aGVvZGlucHJvamVjdC5jb20wTAYDVR0gBEUwQzAIBgZngQwBAgEwNwYLKwYBBAGC3xMBAQEwKDAmBggrBgEFBQcCARYaaHR0cDovL2Nwcy5sZXRzZW5jcnlwdC5vcmcwggEEBgorBgEEAdZ5AgQCBIH1BIHyAPAAdgAHt1wb5X1o//Gwxh0jFce65ld8V5S3au68YToaadOiHAAAAXN0JgipAAAEAwBHMEUCIDhcWBoU1J0YYWMN8TWvkG0O4Wr6MtHEgrOf+ssZ+6itAiEArRfG6KPAINVmbcUdLU7iDsyXZo0V1fOAzdt+PqgiO18AdgBvU3asMfAxGdiZAKRRFf93FRwR2QLBACkGjbIImjfZEwAAAXN0JgkNAAAEAwBHMEUCIQDSMZ5lzXlOSyVJBOFcqNsnCBaZa1tswEMC0C/dXgSePQIgGrZ5hqdDI2V6NCus5AYsHJj4wCF3+Aj59LzxBR7oL2UwDQYJKoZIhvcNAQELBQADggEBACIZuulDHVHDj+6sxebJ1kM0vz8wjuupGnFUAPot8UymAWhnWLLOjRgVm2vEEtx1Uh4GyNXCZpGWaQKjlfE0E9EAJiPfnwmRxQPRmK7qOgRIQgRuhAJHZctEFhhGItBvTIi4G67ftd8dftvtt7+dJRTL+H7WhjG1myFOG/6uvGTgK/8QVRu+NTrU7+i4QqLFkbghb9IHU+NB6kMyHQv4PQnFXmbFb6sH40qrqRC/dU4LVtSlmGIn5XUvT/R9iL8VjLZAsV88qgefvCrGPjqfXuRB1ilewFcst26edHRqK2LbQPAXgY9QSi8pdeb97TVYVjbEnH0v7uuLWDPcd2OkdDdmCjImkVxP+7sgiYWmMt8FvcOXmlQiTNWFiWlrbpbqgwAAAAAAAASWMIIEkjCCA3qgAwIBAgIQCgFBQgAAAVOFc2oLheynCDANBgkqhkiG9w0BAQsFADA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMB4XDTE2MDMxNzE2NDA0NloXDTIxMDMxNzE2NDA0NlowSjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUxldCdzIEVuY3J5cHQxIzAhBgNVBAMTGkxldCdzIEVuY3J5cHQgQXV0aG9yaXR5IFgzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnNMM8FrlLke3cl03g7NoYzDq1zUmGSXhvb418XCSL7e4S0EFq6meNQhY7LEqxGiHC6PjdeTm86dicbp5gWAf15Gan/PQeGdxyGkOlZHP/uaZ6WA8SMx+yk13EiSdRxta67nsHjcAHJyse6cF6s5K671B5TaYucv9bTyWaN8jKkKQDIZ0Z8h/pZq4UmEUEz9l6YKHy9v6Dlb2honzhT+Xhq+w3Brvaw2VFn3EK6BlspkENnWAa6xK8xuQSXgvopZPKiAlKQTGdMDQMc2PMTiVFrqoM7hD8bEfwzB/onkxEz0tNvjj/PIzark5McWvxI0NHWQWM6r6hCm21AvA2H3DkwIDAQABo4IBfTCCAXkwEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMCAYYwfwYIKwYBBQUHAQEEczBxMDIGCCsGAQUFBzABhiZodHRwOi8vaXNyZy50cnVzdGlkLm9jc3AuaWRlbnRydXN0LmNvbTA7BggrBgEFBQcwAoYvaHR0cDovL2FwcHMuaWRlbnRydXN0LmNvbS9yb290cy9kc3Ryb290Y2F4My5wN2MwHwYDVR0jBBgwFoAUxKexpHsscfrb4UuQdf/EFWCFiRAwVAYDVR0gBE0wSzAIBgZngQwBAgEwPwYLKwYBBAGC3xMBAQEwMDAuBggrBgEFBQcCARYiaHR0cDovL2Nwcy5yb290LXgxLmxldHNlbmNyeXB0Lm9yZzA8BgNVHR8ENTAzMDGgL6AthitodHRwOi8vY3JsLmlkZW50cnVzdC5jb20vRFNUUk9PVENBWDNDUkwuY3JsMB0GA1UdDgQWBBSoSmpjBH3duubRObemRWXv86jsoTANBgkqhkiG9w0BAQsFAAOCAQEA3TPXEfNjWDjdGBX7CVW+dla5cEilaUcne8IkCJLxWh9KEik3JHRRHGJouM2VcGfl96S8TihRzZvoroed6ti6WqEBmtzw3Wodatg+VyOeph4EYpr/1wXKtx8/wApIvJSwtmVi4MFU5aMqrSDE6ea73Mj2tcMyo5jMd6jmeWUHK8so/joWUoHOUgwuX4Po1QYz+3dszkDqMp4fklxBwXRsW10KXzPMTZ+sOPAveyxindmjkW8lGy+QsRlGPfZ+G6Z6h7mjem0Y+iWlkYcV4PIWL1iwBi8saCbGS5jN2p8M+X+Q7UNKEkROb3N6KOqkqm57TH2H3eDJAkSnh6/DNFu0QmYKMiaRXE/7uyCJhaYy3wW9w5eaVCJM1YWJaWtuluqDAAAAAAAAA04wggNKMIICMqADAgECAhBEr7CA1qMnuokwOYYu+EBrMA0GCSqGSIb3DQEBBQUAMD8xJDAiBgNVBAoTG0RpZ2l0YWwgU2lnbmF0dXJlIFRydXN0IENvLjEXMBUGA1UEAxMORFNUIFJvb3QgQ0EgWDMwHhcNMDAwOTMwMjExMjE5WhcNMjEwOTMwMTQwMTE1WjA/MSQwIgYDVQQKExtEaWdpdGFsIFNpZ25hdHVyZSBUcnVzdCBDby4xFzAVBgNVBAMTDkRTVCBSb290IENBIFgzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA36/pl1AIg1e0zGJl9pCC7MfTLGswylvs2cN9x0DBGBSL4Ogzdkkq4z8hSZOsTg6vPkjLZe780yEPZdIq2TKPjOX3d7ASe7WVwImjqbrtcy56DAYyg6J+ihQwzRGg4So4uXkKMf1QvYBl37dRY4PI4ohh6kthgexSa7mi4ksaKJ9Io54M2gmOPhcuHt0g31vGKoqrLr1wrcULGiWQdHLFe2qrNNYwif/laBN7VAvI1q7sWpySHj1ks4zG37/JQXDsFnLVJuw4VTlD0Pz9GFxA8Zfr1ZqbjR262iW5xtjfwRUCOqvabvE+LvVcCJw81oNp5BCbGSq2KVfj5T2bn/ACXQIDAQABo0IwQDAPBgNVHRMBAf8EBTADAQH/MA4GA1UdDwEB/wQEAwIBBjAdBgNVHQ4EFgQUxKexpHsscfrb4UuQdf/EFWCFiRAwDQYJKoZIhvcNAQEFBQADggEBAKMaLJsXAFypHu4oZjc6v4PHP0vDCaCVIF3j2VlE0j4NPr2KS6B0H84Qgpx0Gh1+mBrdyxNLsyBE5JHpzPx9pdtq5f7m/eBO3bcAOrVwSa/y5esC8dECixnLlDpeSMQYHlgZXx4CWvAM8bGtqdxZhotu6ZH1hsr6uWYzqllbzuKnFnNHyyvMmbA3SM/jVkv1zw8McjKHxvBEu1NybUP1JkiaUme3WKv+Z3ZxeNsNolYUEzkkMYWiqAJaMEfh3VAHvAIJkADrZGNgmxa8iMkS5tJ9kYv5PTKNZbTpfLFXdurFtig5vxVlHMj2d5ZqCo13C9iRCwSOB9sptgrunYI1NRAAAAABAAAACGh0dHAvMS4xAAE= request-method GET response-head HTTP/1.1 200 OK
+Server: Cowboy
+Date: Sat, 15 Aug 2020 22:40:35 GMT
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Etag: W/"5ffea060a1d99f92c1875ff2094280e3"
+Cache-Control: max-age=0, private, must-revalidate
+X-Request-Id: 9196e369-0b2d-4d00-9e6c-a0a73d5575c0
+X-Runtime: 0.112369
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Via: 1.1 vegur
+ original-response-headers Server: Cowboy
+Date: Sat, 15 Aug 2020 22:40:35 GMT
+Connection: keep-alive
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-Permitted-Cross-Domain-Policies: none
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=utf-8
+Etag: W/"5ffea060a1d99f92c1875ff2094280e3"
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _theodinproject_session=RUxzU2hpSStDTm50S2xHWnVVWnFpQUVhcFc4TlNzK2pUTVB3V0NjUHVSQjhzWGZPZHd1U2Y4Y0JOTWJxMTI0RHc0RUJRKzNGR01JZWZLUWpFVGJ6YVR5TU9GYmpCT2w3djZnWXk5UkRPbGZSbTdZM1RnQ1VKcWZXY3NlVXJVSGhZNzhraUt3MTF4NmlTZnlqakhxM0hmVW9yNG92ZEtJYm9yWWEzK3VNS0E2MnB4dmhnVVRob0pkTmx6RnVzMGdKTW9sMnp0UnVLTkcwNGtvdlNERVJSZ05Vejk4MUZKVnlPV2xhV3Q0T3NVeVMyVlBab0twRWRMNlVBVmlBZURzMS0tN0ZIbmtLOGdnbjk5ZXY2aU5nS0ZKUT09--db8cadcffd392e89c0dc82e657087a792b05c656; path=/; secure; HttpOnly
+X-Request-Id: 9196e369-0b2d-4d00-9e6c-a0a73d5575c0
+X-Runtime: 0.112369
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Transfer-Encoding: chunked
+Via: 1.1 vegur
+ ctid 1 uncompressed-len 0 net-response-time-onstart 206 net-response-time-onstop 210 predictor::resource-count 7 predictor::https://www.theodinproject.com/assets/advert/thinkful-logo-4ecc10f814f1a7a540fd75d22ed17ba791aaeef094b979c70109d58080d36173.svg 1,1,1597531238,4096 predictor::https://www.theodinproject.com/assets/advert/icon-calendar-3b39ee5c660dba03d8d9450d3cd996c66674b2363b17a98c7ec42c436db607bc.svg 1,1,1597531238,4096 predictor::https://www.theodinproject.com/assets/advert/icon-guarantee-6e25ceaa23d8c74c78be566c4a30cd966500f9b710d4e8ed13016ca8d9002b7f.svg 1,1,1597531238,4096 predictor::https://www.theodinproject.com/assets/advert/icon-mentor-4ae8e857dff8767d10b98c93f00a6cadc908f36835547a9f26490759e21ae3c2.svg 1,1,1597531238,4096 predictor::https://ssl.google-analytics.com/ga.js 1,1,1597531238,4096 predictor::https://fonts.gstatic.com/s/opensans/v17/memnYaGs126MiZpBA-UFUKWyV9hrIqM.woff2 1,1,1597531238,4096 predictor::https://use.fontawesome.com/releases/v5.7.2/webfonts/fa-regular-400.woff2 1,1,1597531238,4096   g�

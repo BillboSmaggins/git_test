@@ -1,0 +1,8 @@
+[2020-08-29 12:52:21.314] [sharedprocess] [info] main {"machineId":"84104992f1ee07a4746b2c82d6557e0863897b503c1c47994d36207829e4bf03","windowId":2}
+[2020-08-29 12:52:59.646] [sharedprocess] [info] Installing extension: ritwickdey.liveserver
+[2020-08-29 12:52:59.683] [sharedprocess] [info] Downloaded extension: ritwickdey.liveserver /home/billbosmaggins/.config/Code/CachedExtensionVSIXs/ritwickdey.liveserver-5.6.1
+[2020-08-29 12:53:01.330] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-08-29 12:53:04.027] [sharedprocess] [info] Extracted extension to /home/billbosmaggins/.vscode/extensions/.ritwickdey.liveserver-5.6.1: ritwickdey.liveserver
+[2020-08-29 12:53:04.028] [sharedprocess] [info] Renamed to /home/billbosmaggins/.vscode/extensions/ritwickdey.liveserver-5.6.1
+[2020-08-29 12:53:04.029] [sharedprocess] [info] Installation completed. ritwickdey.liveserver
+[2020-08-29 12:53:04.049] [sharedprocess] [info] Extensions installed successfully: ritwickdey.liveserver
